@@ -10,7 +10,7 @@ jobs:
             - name: Install and Build
               run: |
                   npm install
-                  npm run build
+                  npm run contents:build
 
             - name: Deploy Build Files
               env:
