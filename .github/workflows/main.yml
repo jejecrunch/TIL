@@ -22,4 +22,4 @@ jobs:
                   git init
                   git add -A
                   git commit -m "deploy: deploy contents"
-                  git push -f https://${ACCESS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git main:gh-pages
+                  git push -f https://${ACCESS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git master:gh-pages
