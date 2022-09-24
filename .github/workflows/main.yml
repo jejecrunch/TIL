@@ -7,10 +7,19 @@ jobs:
             - name: Checkout
               uses: actions/checkout@main
 
-            - name: Vuepress deploy
-              uses: jenkey2011/vuepress-deploy@1.0.1
+            - name: Install and Build
+              run: |
+                  npm install
+                  npm run build
+
+            - name: Deploy Build Files
               env:
                   ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-                  BUILD_SCRIPT: yarn && yarn contents:build
-                  TARGET_BRANCH: gh-pages
-                  BUILD_DIR: build/
+              run: |
+                  cd contents/.vuepress/dist
+                  git config --global user.email "gkswlgp456@gmail.com"
+                  git config --global user.name "jejecrunch"
+                  git init
+                  git add -A
+                  git commit -m "deploy: deploy contents"
+                  git push -f https://${ACCESS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git main:gh-pages
