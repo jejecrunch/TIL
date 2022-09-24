@@ -1,0 +1,17 @@
+{
+  "name": "til",
+  "version": "1.0.0",
+  "description": "매일 혹은 매주 혹은 매월 무엇을 배웠는지 가볍게 써내려가는 제제의 짧은 회고",
+  "main": "index.js",
+  "repository": "git@github.com:jejecrunch/TIL.git",
+  "author": "제제jeje <gkswlgp456@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "contents:dev": "vuepress dev contents",
+    "contents:build": "vuepress build contents",
+    "contents:eject": "vuepress eject"
+  },
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  }  
+}
