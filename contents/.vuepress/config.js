@@ -11,6 +11,7 @@ module.exports = {
         ["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Song+Myung" }],
     ], // html head에 넣을 값들을 설정
     themeConfig: {
+        smoothScroll: true,
         nav: [
             // 페이지 우측 상단에 보여질 nav들
             { text: "📦 깃허브", link: "https://github.com/jejecrunch/" },
