@@ -36,7 +36,7 @@
   h1 {
     font-family: "Black Han Sans", cursive;
     font-weight: 500;
-    border-bottom: 17px solid #DD2E44;
+    border-bottom: 17px solid #3eaf7c;
     word-break: keep-all;
     font-size: 5rem;
   }
