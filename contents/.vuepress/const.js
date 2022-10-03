@@ -10,7 +10,6 @@ const date = (start, end) => {
         res.push(sDay.getFullYear().toString().slice(-2) + _mon_ + _day_ + "")
         sDay.setDate(sDay.getDate() + 1)
     }
-    console.log(res)
     return res
 }
 
@@ -20,8 +19,8 @@ const prefix = {
     MIL: "monthly",
 }
 
-exports.TILList = date("2022-09-24", "2022-09-28").map((v) => prefix.TIL + "/" + v + ".md")
+exports.TILList = date("2022-09-24", "2022-10-04").map((v) => prefix.TIL + "/" + v + ".md")
 
-exports.WILList = ["39"].map((v) => prefix.WIL + "/" + v + ".md")
+exports.WILList = ["22W39"].map((v) => prefix.WIL + "/" + v + ".md")
 
-exports.MILList = []
+exports.MILList = ["22M09"].map((v) => prefix.MIL + "/" + v + ".md")
