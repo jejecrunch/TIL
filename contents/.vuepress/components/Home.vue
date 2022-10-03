@@ -28,7 +28,7 @@
   
   <style>
   @import "https://fonts.googleapis.com/css?family=Black+Han+Sans";
-  
+
   .infoContainer {
     text-align: right;
   }
@@ -36,7 +36,7 @@
   h1 {
     font-family: "Black Han Sans", cursive;
     font-weight: 500;
-    border-bottom: 17px solid #3eaf7c;
+    border-bottom: 17px solid #D32F2F;
     word-break: keep-all;
     font-size: 5rem;
   }
