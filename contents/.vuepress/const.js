@@ -19,7 +19,9 @@ const prefix = {
     MIL: "monthly",
 }
 
-exports.TILList = date("2022-09-24", "2022-10-04").map((v) => prefix.TIL + "/" + v + ".md")
+exports.TILList = [...date("2022-09-24", "2022-10-03"), ...date("2022-10-13", "2022-10-16")].map(
+    (v) => prefix.TIL + "/" + v + ".md"
+)
 
 exports.WILList = ["22W39"].map((v) => prefix.WIL + "/" + v + ".md")
 
